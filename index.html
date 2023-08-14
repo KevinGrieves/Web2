@@ -3,25 +3,39 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<title>ClickStart - WebDev with CSS</title>
+	
+	
+	<style>
+	div.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 10px;
+		margin: 5px;
+	}
+</style>
+	
+	
+	
+	
 </head>
 
 <body>
 	
 <header>
-<div class="bar" style="text-align: center;">
+<div class="bar" style="text-align: center;" id="top">
 	<h1><a href="index.html">Web Development</a></h1>
 </div>
 </header>
 
 <nav>
 <div class="bar">
-	<p><b>Useful Links</b>
+	<b>Useful Links</b>
 	<a href="https://www.w3schools.com/html/default.asp"><button class="btn">W3Schools: HTML</button></a>
 	<a href="https://www.w3schools.com/css/default.asp"><button class="btn">W3Schools: CSS</button></a>
 	<a href="https://www.w3schools.com/bootstrap5/"><button class="btn">W3Schools: Bootstrap5</button></a>
 	<a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><button class="btn">Bootstrap Docs</button></a>
 	<a href="https://stackoverflow.com/"><button class="btn">Stack Overflow</button></a>
-	</p>
+	
 		
 </div>
 </nav>
@@ -29,12 +43,15 @@
 <div style="display: flex; flex: 1; flex-direction: row;">
 	
 	<div class="sidebar" style="flex-basis: 120px;">
-		<div style="position: fixed; margin:5px;">
+		<div class="sticky">
+			
 			<a href="#s1"><h3>Session 1</h3></a>
 			<a href="#s2"><h3>Session 2</h3></a>
 			<a href="#s3"><h3>Session 3</h3></a>
 			<a href="#s4"><h3>Session 4</h3></a>
 			<a href="#s5"><h3>Session 5</h3></a>
+			<br>
+			<a href="#top"><h4>Back to top</h4></a>
 		</div>
 	</div>
 	
@@ -61,7 +78,7 @@
 				<li><a href="lists.html">Ordered Lists</a></li>
 				<li><a href="lists with type.html">Ordered Lists with Types</a></li>
 				<li><a href="unordered lists.html">Unordered Lists</a></li>
-				<li><a href="nested lists.html">Images</a></li>
+				<li><a href="nested lists.html">Nested lists</a></li>
 				<li><a href="tables.html">Tables</a></li>
 				<li><a href="entities.html">Entities</a></li>
 				<li><a href="comments.html">Comments</a></li>
@@ -114,9 +131,9 @@
 	</div>
 	</main>
 
-<footer>
 </div>
-<div class="bar" style="clear:both; text-align: center;">
+<footer>
+<div class="bar" style="clear:both; text-align: center; bottom:0;">
 		<b>&copy; Kevin Grieves, 2023</a></b>
 </div>
 </footer>
